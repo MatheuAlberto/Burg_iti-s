@@ -448,7 +448,7 @@ function handleFormSubmit(event) {
 
     const isopen = aberto_ou_fechado()
     
-    if (!isopen) {
+    if (isopen) {
         Toastify({
             text: "A HAMBURGARIA ESTÁ FECHADA",
             duration: 3000,
