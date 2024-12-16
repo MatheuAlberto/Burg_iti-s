@@ -67,14 +67,14 @@ function aberto_ou_fechado() {
 const isopen = aberto_ou_fechado()
 
 if (!isopen) {
+    hora_header.style.backgroundColor = '#54CC0A'
+    fechado.style.display = 'none'
+
+} else {
     hora_header.style.backgroundColor = 'red'
     fechado.style.display = 'block'
     fechado.innerHTML = 'Estabelecimento Fechado'
     fechado.style.margin = '13px 0 0 0'
-
-} else {
-    hora_header.style.backgroundColor = '#54CC0A'
-    fechado.style.display = 'none'
 }
 
 
