@@ -485,7 +485,7 @@ function handleFormSubmit(event) {
     const messageCardapio = generateFormattedString(data)
 
     const messageFinal = encodeURIComponent(messageCardapio)
-    const phone = '+559294335888'
+    const phone = '+5596991531417'
 
     window.open(`https://wa.me/${phone}?text=${messageFinal}`, '_blank')
 
