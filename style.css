@@ -97,12 +97,13 @@ main {
 main>.cardapio_main {
     display: flex;
     justify-content: space-between;
-
+    height: 140px;
 }
 
 main>.cardapio_main>.img_main {
-    width: 150px;
-    height: 120px;
+    width: 170px;
+    height: 100%;
+    align-self: center;
 
     transition-property: transform;
     transition-duration: 1s;
