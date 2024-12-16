@@ -62,7 +62,7 @@ function clicou() {
 function aberto_ou_fechado() {
     var agora = new Date()
     var hora = agora.getHours()
-     hora > 18 && hora < 23; return hora = true
+    return hora > 18 && hora < 23;
 }
 const isopen = aberto_ou_fechado()
 
