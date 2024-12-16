@@ -1,0 +1,13 @@
+/*Imagem logo tipo*/
+header>#hamburguer_header:hover{
+    transform: scale(1.15);
+}
+
+/*Imagem cardapio*/
+main>.cardapio_main>.img_main:hover{
+    outline: solid 5px red;
+    border-radius: 5px;
+}
+
+
+  

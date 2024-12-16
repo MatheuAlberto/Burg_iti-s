@@ -1,0 +1,32 @@
+/*quicando_maps_main*/
+@keyframes quicando{
+    to{
+        transform: translatey(-5px);
+        
+    }
+
+}
+/*Footer Card*/
+@keyframes carro_indo{
+    to{
+        transform: translateX(100vw);
+        
+    }
+
+}
+@keyframes carro_voltando {
+    0%{
+        transform: translateX(100Vw);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes pusando_card {
+    0%{
+        outline: #d1d3cf 15px solid;
+    }
+    100%{
+        outline: none;
+    }
+}

@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: inter;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #f6f7f8;
+    position: relative;
+
+}
+
+header {
+    height: 100vh;
+    background-image: url(/img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+}
+
+header>#hamburguer_header {
+    width: 185px;
+    height: 185px;
+
+    background-image: url(/img/Imagem\ do\ WhatsApp\ de\ 2024-11-21\ à\(s\)\ 15.42.41_ffaffb90.jpg);
+    background-position: center;
+    background-size: cover;
+
+    border: solid 1px white;
+    border-radius: 50%;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+}
+
+header>#txt_header {
+    text-align: center;
+}
+header>#txt_header>a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    gap: 5px;
+    position: relative;
+}
+header>#txt_header>a>img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: -4px;
+
+    animation: quicando 1s ease-out alternate infinite;
+}
+
+header>#hora_header {
+    background-color: #54cd0a;
+    padding: 0px 50px;
+    border-radius: 5px;
+
+    font-family: inter;
+    font-size: 300;
+}
+
+header>#fechado {
+    display: none;
+}
+
+.txt_catalago {
+    text-align: center;
+}
+
+#txt_catalago>h1 {
+    margin: 100px 0 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 26px 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main>.cardapio_main {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main>.cardapio_main>.img_main {
+    width: 150px;
+    height: 120px;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+}
+
+main>.cardapio_main>.img_main>.img_main_principal {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+main>.cardapio_main>.txt_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 110px;
+    padding: 0 10px;
+}
+
+main>.cardapio_main>.txt_main>p {
+    margin: 0;
+    padding: 0;
+}
+
+main>.cardapio_main>.txt_main>.txt_p_negrito_main {
+    font-weight: 800;
+}
+
+main>.cardapio_main>.txt_main>.txt_footer_main>.txt_p_negrito_main {
+    font-weight: 800;
+}
+
+main>.cardapio_main>.txt_main>.txt_footer_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main>.cardapio_main>.txt_main>.txt_footer_main>.txt_icone_main {
+    color: white;
+    background-color: black;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 14pt;
+    cursor: pointer;
+
+    
+    
+}
+
+.swiper {
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+}
+.swiper {
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+.swiper-slide{
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.07);
+    
+    display: flex;
+    justify-content: center;
+    
+
+}
+.container_filho_bebidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container_filho_bebidas>.img_bebidadas {
+    width: 150px;
+    height: 150px;
+}
+
+.container_filho_bebidas>p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.container_filho_bebidas>.Valores_bebidas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.container_filho_bebidas>.Valores_bebidas>.txt_icone_main {
+    color: white;
+    background-color: black;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 14pt;
+    cursor: pointer;
+}
+.swiper-backface-hidden .swiper-slide {
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    position: absolute;
+    top: -50px;
+    right: -5px;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    position: absolute;
+    top: -50px;
+    left: -5px;
+}
+.swiper-horizontal {
+    padding: 0 50px;
+}
+footer {
+    display: flex;
+    background-color: #FF3131;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    padding: 10px 0;
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.fixed {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+footer>p {
+    font-weight: 500;
+}
+
+footer>#icone_footer {
+    font-size: 30px;
+}
+
+/* Modal Inicil */
+#modal_fundo {
+    background: black;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 2;
+}
+
+#modal_container {
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 3;
+
+    overflow-y: scroll;
+    width: 520px;
+    max-height: 500px;
+}
+
+#modal_container::-webkit-scrollbar {
+    width: 12px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+}
+
+#modal_container::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 5px;
+}
+
+#modal_container>h1 {
+    text-align: center;
+    font-size: 21pt;
+}
+
+.modal_container_p>p {
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+#endereco_pai {
+    background-image: url(/img/madeiraClara.avif);
+    padding: 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.casam1m2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.casam1m2>input {
+    width: 40px;
+    border-radius: 5px;
+    border: solid 2px black;
+    color: black;
+    padding: 7px;
+    margin: 0;
+}
+
+.x1 {
+    position: absolute;
+    bottom: 70%;
+    left: 75%;
+}
+
+.x2 {
+    position: absolute;
+    bottom: 50%;
+    left: 74.7%;
+}
+
+.x3 {
+    position: absolute;
+    bottom: 30%;
+    left: 69%;
+}
+
+#endereco_form>button {
+    cursor: pointer;
+    background-color: #54cd0a;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13pt;
+
+    position: absolute;
+    top: 71.5%;
+    left: 76%;
+}
+
+#model_sair {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sair {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13pt;
+}
+
+.remover_item {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13pt;
+}
+
+/* Estilização do container do Modal */
+#container_pai_Modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* Modal Fim */
+
+@media(max-width: 850px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 26px;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media(max-width: 675px) {
+    #modal_container {
+        background-color: white;
+        padding: 20px;
+        width: 380px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 2%;
+        display: none;
+    }
+
+    #endereço {
+        width: 360px;
+        border: 2px solid;
+        padding: 8px;
+    }
+
+    .x1 {
+        position: absolute;
+        bottom: 70%;
+        left: 70%;
+    }
+
+    .x2 {
+        position: absolute;
+        bottom: 50%;
+        left: 69.5%;
+    }
+
+    .x3 {
+        position: absolute;
+        bottom: 30%;
+        left: 61.7%;
+    }
+
+    #endereco_form>button {
+        position: absolute;
+        top: 71.5%;
+        left: 69.5%;
+    }
+
+}
+
+@media(max-width: 400px) {
+    #modal_container {
+        background-color: white;
+        padding: 20px;
+        width: 320px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 2%;
+        display: none;
+    }
+
+    #endereço {
+        width: 300px;
+        border: 2px solid;
+        padding: 8px;
+    }
+
+    .x1 {
+        position: absolute;
+        bottom: 70%;
+        left: 63%;
+    }
+
+    .x2 {
+        position: absolute;
+        bottom: 50%;
+        left: 62%;
+    }
+
+    .x3 {
+        position: absolute;
+        bottom: 30%;
+        left: 52.5%;
+    }
+
+    #endereco_form>button {
+        position: absolute;
+        top: 71.5%;
+        left: 62.5%;
+    }
+
+}

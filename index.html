@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Tags OG -->
+    <meta property = "og:type" content="Website"/>
+    <meta property = "og:title" content="Burg_iti's - O melhor Hamburguer do Macapaba!!"/>
+    <meta property = "og:image" content="Website"/>
+    <meta property = "og:description" content="O melhor hamburguer caseiro de verdade, bem perto de você!"/>
+    <meta property = "og:site_name" content="Burg_iti's"/>
+
+
+
+
+    <title>Burg_iti's</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="animacao.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div id="hamburguer_header"></div>
+        <div id="txt_header">
+            <h1>Iti's Burguer</h1>
+           <a href="https://maps.app.goo.gl/UhbVEnCoKQZNkKnU6" target="_blank"><p>Rua Miguel Arras, Macapaba, Macapá-AP</p> <img src="/img/google-maps.png" alt=""></a>
+        </div>
+        <div id="hora_header">
+            <p>Seg á Dom - 18:00 as 23:00</p>
+        </div>
+        <div id="fechado"></div>
+    </header>
+
+    <div class="txt_catalago">
+        <h1>Conheça nosso menu</h1>
+    </div>
+
+    <main>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="img/hamburguer-simples.jpg" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">Hamburguer Simples</p>
+                <p>Pão levinho de fermentação natural de Trigo, carne <br> ovo, queijo, salsicha, salada</p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 10,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Hamburguer Simples"
+                        data-price="10.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="/img/hamb-5.png" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">Hamburguer Especial</p>
+                <p>Pão levinho de fermentação natural de Trigo, carne <br> ovo, queijo, presunto, calabresa, salsicha,
+                    salada, batata-palha</p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 12,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Hamburguer Especial"
+                        data-price="12.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="/img/hamb-1.png" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">Hamburgão</p>
+                <p>Pão levinho de fermentação natural de Trigo, 2 carne <br> ovo, queijo, presunto, calabresa, salsicha,
+                    salada</p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 17,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Hamburgão"
+                        data-price="17.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="/img/hamb-4.png" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">Burguer-XFrango</p>
+                <p>Pão levinho de fermentação natural de Trigo, Frango <br> ovo, presunto, queijo, presunto, salada</p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 12,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Burguer-XFrango"
+                        data-price="12.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="img/x-calabresa.jpeg" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">X-Calabresa</p>
+                <p>Pão levinho de fermentação natural de Trigo, 1 carne <br> queijo, presunto, extra-calabresa, salada
+                </p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 16,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="X-Calabresa"
+                        data-price="16.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="/img/hamburguer-x-calabresa.png" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">EggX-Calabresa</p>
+                <p>Pão levinho de fermentação natural de Trigo, 1 carne <br> ovo, queijo, presunto, extra-calabresa,
+                    salada</p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 17,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="EggX-Calabresa"
+                        data-price="17.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="/img/hamb-2.png" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">X-Bacon</p>
+                <p>Pão levinho de fermentação natural de Trigo, 1 carne <br> queijo, presunto, bacon, salada</p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 16,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="X-Bacon"
+                        data-price="16.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="/img/hamb-7.png" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">EggX-Bacon</p>
+                <p>Pão levinho de fermentação natural de Trigo, 1 carne <br> ovo, queijo, presunto, bacon, salada</p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 17,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="EggX-Bacon"
+                        data-price="17.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="img/misto_quente.jpeg" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">Misto Quente</p>
+                <p>Pão de forma, presunto e queijo</p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 10,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Misto Quente"
+                        data-price="10.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio_main">
+            <div class="img_main"><img class="img_main_principal" src="/img/misto_duplo.jpeg" alt=""></div>
+            <div class="txt_main">
+                <p class="txt_p_negrito_main">Queijo Quente</p>
+                <p> Pão de forma e 2 fatias de queijo</p>
+                <div class="txt_footer_main">
+                    <p class="txt_p_negrito_main">R$ 10,00</p>
+                    <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Queijo Quente"
+                        data-price="10.00"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="txt_catalago">
+        <h1>Bebidas</h1>
+    </div>
+
+    <div class="swiper" id="pai_bebidas">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="container_filho_bebidas">
+                    <img class="img_bebidadas" src="/img/refri-1.png" alt="">
+                    <p>Coca cola</p>
+                    <div class="Valores_bebidas">
+                        <p><strong>R$ 5,00</strong></p>
+                        <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Coca Cola"
+                            data-price="5.00"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container_filho_bebidas">
+                    <img class="img_bebidadas" src="/img/refri-2.png" alt="">
+                    <p>Guaraná</p>
+                    <div class="Valores_bebidas">
+                        <p><strong>R$ 5,00</strong></p>
+                        <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Guaraná"
+                            data-price="5.00"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container_filho_bebidas">
+                    <img class="img_bebidadas" src="/img/refri-3.png" alt="">
+                    <p>Sukita</p>
+                    <div class="Valores_bebidas">
+                        <p><strong>R$ 5,00</strong></p>
+                        <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Sukita"
+                            data-price="5.00"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container_filho_bebidas">
+                    <img class="img_bebidadas" src="/img/Peps-lata.png" alt="">
+                    <p>Pepsi</p>
+                    <div class="Valores_bebidas">
+                        <p><strong>R$ 5,00</strong></p>
+                        <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Pepsi"
+                            data-price="5.00"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container_filho_bebidas">
+                    <img class="img_bebidadas" src="img/Coca-1L.png" alt="">
+                    <p>Coca cola 1L</p>
+                    <div class="Valores_bebidas">
+                        <p><strong>R$ 9,00</strong></p>
+                        <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Coca Cola 1L"
+                            data-price="9.00"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container_filho_bebidas">
+                    <img class="img_bebidadas" src="img/Guraná-1L.png" alt="">
+                    <p>Guaraná 1L</p>
+                    <div class="Valores_bebidas">
+                        <p><strong>R$ 9,00</strong></p>
+                        <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Guaraná 1L"
+                            data-price="9.00"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container_filho_bebidas">
+                    <img class="img_bebidadas" src="img/Sukita-1L.png" alt="">
+                    <p>Sukita 1L</p>
+                    <div class="Valores_bebidas">
+                        <p><strong>R$ 9,00</strong></p>
+                        <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Sukita 1L"
+                            data-price="9.00"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container_filho_bebidas">
+                    <img class="img_bebidadas" src="img/Pepsi-1L.png" alt="">
+                    <p>Pepsi 1L</p>
+                    <div class="Valores_bebidas">
+                        <p><strong>R$ 9,00</strong></p>
+                        <ion-icon class="txt_icone_main" name="cart-sharp" data-name="Pepsi 1L"
+                            data-price="9.00"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+    <footer id="card">
+        <p id="cont_footer">( 0 )</p>
+        <p>Veja seu carrinho</p>
+        <ion-icon id="icone_footer" name="cart-outline"></ion-icon>
+    </footer>
+
+    <!-- MODAL INICIL-->
+    <div id="modal_fundo">
+    </div>
+
+    <div id="modal_container" class="modal_container_p">
+        <h1>Meu Carrinho</h1>
+
+        <di id="cart_items"></di>
+
+        <p>Total: <span id="cart_total"></span></p>
+        <p>Endereço:</p>
+        <div id="endereco_pai">
+            <div id="formulario_endereco">
+                <form method="post" onsubmit="" id="endereco_form">
+                    <p class="casam1m2"><label for=""><strong>Macapaba 01</strong></label><input type="radio"
+                            name="macapaba1" id="macapaba01" value="Macapaba01" required></p>
+                    <p class="casam1m2"><label for=""><strong>Macapaba 02</strong></label><input type="radio"
+                            name="macapaba1" id="macapaba02" value="Macapaba02"></p>
+                    <p class="casam1m2"><label for=""><strong>Casa</strong></label><input type="checkbox" id='casa'name="macapaba1"
+                            id="casa" value="Casa"></p>
+                    <p class="casam1m2 x1"><strong>Qd:</strong> <input type="number" name="quadra" id="qd"
+                            class="inputNumber" placeholder="00" min="0" maxlength="99" max="99" required></p>
+                    <p class="casam1m2 x2"><strong>Blc:</strong> <input type="number" name="bloco" id="blc"
+                            class="inputNumber" placeholder="00" min="0" max="99" required></p>
+                    <p class="casam1m2 x3"><strong>N°/Apt:</strong> <input type="number" name="Apartamento" id="apt"
+                            class="inputNumber" min="0" max="404" placeholder="000" required></p>
+                    <button type="submit"><strong>Finalizar</strong></button>
+                </form>
+
+            </div>
+            <div id="model_sair" class="modal_container_p">
+                <p id="sair">Sair</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MODAL FIM -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
