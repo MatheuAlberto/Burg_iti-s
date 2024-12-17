@@ -58,26 +58,6 @@ function clicou() {
 
 }
 
-// Horário Aberto ou Fechado
-function aberto_ou_fechado() {
-    var agora = new Date()
-    var hora = agora.getHours()
-    return hora > 18 && hora < 23;
-}
-const isopen = aberto_ou_fechado()
-
-if (!isopen) {
-    hora_header.style.backgroundColor = '#54CC0A'
-    fechado.style.display = 'none'
-
-} else {
-    hora_header.style.backgroundColor = 'red'
-    fechado.style.display = 'block'
-    fechado.innerHTML = 'Estabelecimento Fechado'
-    fechado.style.margin = '13px 0 0 0'
-}
-
-
 // Listagem dos itens que apareceram dentro do Modal
 let cart = []
 let itens = []
@@ -448,7 +428,7 @@ function handleFormSubmit(event) {
 
     const isopen = aberto_ou_fechado()
     
-    if (isopen) {
+    if (!isopen) {
         Toastify({
             text: "A HAMBURGARIA ESTÁ FECHADA",
             duration: 3000,
@@ -490,6 +470,25 @@ function handleFormSubmit(event) {
     window.open(`https://wa.me/${phone}?text=${messageFinal}`, '_blank')
 
 }
+
+// Horário Aberto ou Fechado
+function aberto_ou_fechado() {
+    const agora = new Date()
+    const hora = agora.getHours()
+    return hora >= 18 && hora < 23;
+}
+const isopen = aberto_ou_fechado()
+
+if (isopen) {
+    hora_header.style.backgroundColor = '#54CC0A'
+    fechado.style.display = 'none'
+} else {
+    hora_header.style.backgroundColor = 'red'
+    fechado.style.display = 'block'
+    fechado.innerHTML = 'Estabelecimento Fechado'
+    fechado.style.margin = '13px 0 0 0'
+}
+
 function generateFormattedString(dataForm) {
    let total = 0;
     const formattedString = itens.map(item => {
